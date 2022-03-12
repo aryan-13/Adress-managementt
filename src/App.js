@@ -50,7 +50,7 @@ export default function App() {
       <div>
         <h4 className="heading-3 bold-1 text-left">Manage Address</h4>
         <div className="u-margin-bottom-medium"></div>
-        <a className="btn btn-secondary btn-lg" onClick={addNewAddr}>
+        <a className="btn btn-primary btn-md" onClick={addNewAddr}>
           Add a new address
         </a>
         <div className="u-margin-bottom-small"></div>

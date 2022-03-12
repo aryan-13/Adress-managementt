@@ -69,12 +69,12 @@ export default function Form({
   return (
     <div>
       <form
-        className="flex-col"
+        className="flex-col form"
         onSubmit={
           !editObj.edit ? (e) => submitHandler(e) : (e) => UpdateHandler(e)
         }
       >
-        <label className="text-left heading-5" for="fname">
+        <label className="text-left p-md" for="fname">
           Name:
         </label>
         <br />
@@ -82,9 +82,9 @@ export default function Form({
           value={formObj.name}
           onChange={(e) => setFormObj({ ...formObj, name: e.target.value })}
           type="text"
-          class="basic-input input-md"
+          class="basic-input input-sm"
         />
-        <label className="text-left heading-5" for="fname">
+        <label className="text-left p-md" for="fname">
           Phone Number:
         </label>
         <br />
@@ -92,9 +92,9 @@ export default function Form({
           value={formObj.ph}
           onChange={(e) => setFormObj({ ...formObj, ph: e.target.value })}
           type="number"
-          class="basic-input input-md"
+          class="basic-input input-sm"
         />
-        <label className="text-left heading-5" for="fname">
+        <label className="text-left p-md" for="fname">
           Address Line 1:
         </label>
         <br />
@@ -102,9 +102,9 @@ export default function Form({
           value={formObj.address1}
           onChange={(e) => setFormObj({ ...formObj, address1: e.target.value })}
           type="text"
-          class="basic-input input-md"
+          class="basic-input input-sm"
         />
-        <label className="text-left heading-5" for="fname">
+        <label className="text-left p-md" for="fname">
           Address Line 2:
         </label>
         <br />
@@ -112,10 +112,10 @@ export default function Form({
           value={formObj.address2}
           onChange={(e) => setFormObj({ ...formObj, address2: e.target.value })}
           type="text"
-          class="basic-input input-md"
+          class="basic-input input-sm"
         />
 
-        <label className="text-left heading-5" for="fname">
+        <label className="text-left p-md" for="fname">
           Pincode
         </label>
         <br />
@@ -123,10 +123,10 @@ export default function Form({
           value={formObj.pincode}
           onChange={(e) => setFormObj({ ...formObj, pincode: e.target.value })}
           type="text"
-          class="basic-input input-md"
+          class="basic-input input-sm"
         />
 
-        <label className="text-left heading-5" for="fname">
+        <label className="text-left p-md" for="fname">
           City:
         </label>
         <br />
@@ -134,9 +134,9 @@ export default function Form({
           value={formObj.city}
           onChange={(e) => setFormObj({ ...formObj, city: e.target.value })}
           type="text"
-          class="basic-input input-md"
+          class="basic-input input-sm"
         />
-        <label className="text-left heading-5" for="fname">
+        <label className="text-left p-md" for="fname">
           State:
         </label>
         <br />
@@ -144,7 +144,7 @@ export default function Form({
           value={formObj.state}
           onChange={(e) => setFormObj({ ...formObj, state: e.target.value })}
           type="text"
-          class="basic-input input-md"
+          class="basic-input input-sm"
         />
         <div className="u-margin-bottom-small"></div>
 
