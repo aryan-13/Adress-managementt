@@ -21,6 +21,7 @@ export default function Address({ obj, setAddresses, addresses, setFormObj }) {
     <div>
       <div className="address text-left">
         <h5 className="heading-5">{obj.name}</h5>
+        <p className="p-md">Ph:{obj.ph}</p>
         <p className="p-md">
           {obj.address1}, {obj.address2} {obj.city}
         </p>
